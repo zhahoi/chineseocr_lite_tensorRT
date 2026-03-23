@@ -56,9 +56,9 @@ CrnnNet    文字识别    输入: [1, 3, 32, W]  动态宽度
 
 | 依赖 | 版本 |
 |------|------|
-| TensorRT | 10.x |
-| CUDA | 12.x |
-| OpenCV | 4.x（含 freetype 模块）|
+| TensorRT | 10.7.0.23 |
+| CUDA | 12.6.85 |
+| OpenCV |4.10.0（含 freetype 模块）|
 | CMake | ≥ 3.18 |
 | C++ | 17 |
 
