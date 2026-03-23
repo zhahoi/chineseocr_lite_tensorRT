@@ -5,7 +5,7 @@
 > **总模型仅 4.7M**：DBNet (1.8M) + CRNN (2.5M) + AngleNet (378KB)
 
 ---
-### 写在前面
+## 写在前面
 本项目是我对针对[chineseocr_lite](https://github.com/DayBreak-u/chineseocr_lite)该项目的TensorRT移植，因为我发现该项目发布好几年了，仍旧没有TensorRT的推理代码，因此我想尝试对其进行移植，顺便学习该项目进行OCR检测的基本流程及原理，于是便有了该仓库。本项目是基于[chineseocr_lite](https://github.com/DayBreak-u/chineseocr_lite)提供的`ncnn`版本移植进行修改的，且本项目已经尽可能让代码变得简洁直观（借助了claude code）。
 
 ---
@@ -102,7 +102,7 @@ chineseocr_lite_tensorRT/
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/yourname/chineseocr_lite_tensorRT.git
+git clone https://github.com/zhahoi/chineseocr_lite_tensorRT.git
 cd chineseocr_lite_tensorRT
 
 # 2. 编译
