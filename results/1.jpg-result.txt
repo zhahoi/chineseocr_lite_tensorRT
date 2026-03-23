@@ -1,0 +1,42 @@
+=====Input Params=====
+padding(50),maxSideLen(1024),boxScoreThresh(0.600000),boxThresh(0.300000),unClipRatio(2.000000),doAngle(1),mostAngle(1)
+=====Start detect=====
+ScaleParam(sw:740,sh:740,dw:736,dh:736,0.994595,0.994595)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(23.346302ms)
+TextBox[0](+padding)[score(0.710186),[x:314,y:61],[x:665,y:432],[x:622,y:473],[x:271,y:102]]
+TextBox[1](+padding)[score(0.740822),[x:436,y:55],[x:685,y:306],[x:631,y:359],[x:382,y:108]]
+TextBox[2](+padding)[score(0.770183),[x:264,y:130],[x:558,y:460],[x:499,y:512],[x:205,y:182]]
+TextBox[3](+padding)[score(0.749225),[x:183,y:186],[x:477,y:532],[x:416,y:585],[x:122,y:238]]
+TextBox[4](+padding)[score(0.674107),[x:112,y:235],[x:314,y:499],[x:252,y:547],[x:50,y:283]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1),score(1.000000),time(1.643005ms)]
+angle[1][index(1),score(0.999998),time(1.121108ms)]
+angle[2][index(1),score(0.999985),time(1.903457ms)]
+angle[3][index(1),score(0.999988),time(2.001475ms)]
+angle[4][index(1),score(1.000000),time(2.178566ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](香港深圳抽血，可邮寄)
+textScores[0]{0.995961 ,0.996046 ,0.999721 ,0.999717 ,0.999898 ,0.997444 ,0.999083 ,0.999997 ,0.998774 ,0.999465}
+crnnTime[0](18.039712ms)
+textLine[1](专业查性别)
+textScores[1]{0.99999 ,0.999986 ,0.955874 ,0.99991 ,0.999962}
+crnnTime[1](11.992437ms)
+textLine[2](专业鉴定B超单)
+textScores[2]{0.999984 ,0.999995 ,0.999045 ,0.999993 ,0.998792 ,0.999988 ,0.999949}
+crnnTime[2](14.952201ms)
+textLine[3](b超仪器查性别)
+textScores[3]{0.99374 ,0.999987 ,0.9982 ,0.997327 ,0.998325 ,0.999859 ,0.99984}
+crnnTime[3](13.443855ms)
+textLine[4](加微信eee)
+textScores[4]{0.99844 ,0.997894 ,0.999418 ,0.773611 ,0.969702 ,0.997913}
+crnnTime[4](10.324535ms)
+=====End detect=====
+FullDetectTime(111.188277ms)
+香港深圳抽血，可邮寄
+专业查性别
+专业鉴定B超单
+b超仪器查性别
+加微信eee
+

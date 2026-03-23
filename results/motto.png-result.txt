@@ -1,0 +1,36 @@
+=====Input Params=====
+padding(50),maxSideLen(1024),boxScoreThresh(0.600000),boxThresh(0.300000),unClipRatio(2.000000),doAngle(1),mostAngle(1)
+=====Start detect=====
+ScaleParam(sw:830,sh:594,dw:800,dh:576,0.963855,0.969697)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(19.107705ms)
+TextBox[0](+padding)[score(0.866012),[x:131,y:206],[x:692,y:204],[x:693,y:245],[x:132,y:247]]
+TextBox[1](+padding)[score(0.865953),[x:131,y:264],[x:737,y:267],[x:736,y:311],[x:130,y:308]]
+TextBox[2](+padding)[score(0.850805),[x:132,y:324],[x:413,y:324],[x:413,y:369],[x:132,y:369]]
+TextBox[3](+padding)[score(0.861528),[x:228,y:383],[x:420,y:383],[x:420,y:431],[x:228,y:431]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1),score(1.000000),time(1.834254ms)]
+angle[1][index(1),score(1.000000),time(1.872334ms)]
+angle[2][index(1),score(1.000000),time(1.537959ms)]
+angle[3][index(1),score(1.000000),time(1.028249ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](虚数是奇妙的人类精油寄托)
+textScores[0]{0.579126 ,0.946056 ,0.994637 ,0.925589 ,0.999161 ,0.999997 ,0.999072 ,0.962609 ,0.299551 ,0.471877 ,0.989141 ,0.991565}
+crnnTime[0](25.105454ms)
+textLine[1](它好像是存在与不存在之问的)
+textScores[1]{0.998623 ,0.999967 ,0.999845 ,0.999334 ,0.994829 ,0.999851 ,0.996073 ,0.999868 ,0.998883 ,0.999728 ,0.999804 ,0.554912 ,0.99999}
+crnnTime[1](22.942168ms)
+textLine[2](一种两栖动物)
+textScores[2]{0.977237 ,0.999994 ,0.997205 ,0.886061 ,0.99976 ,0.999845}
+crnnTime[2](14.472679ms)
+textLine[3](菜布尼茨)
+textScores[3]{0.695538 ,0.999959 ,0.999903 ,0.99297}
+crnnTime[3](10.659240ms)
+=====End detect=====
+FullDetectTime(103.304063ms)
+虚数是奇妙的人类精油寄托
+它好像是存在与不存在之问的
+一种两栖动物
+菜布尼茨
+
