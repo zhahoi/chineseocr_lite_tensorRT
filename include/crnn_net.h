@@ -41,10 +41,8 @@ public:
 private:
     static constexpr float MEAN_VALUES[3] = {127.5f, 127.5f, 127.5f};
     static constexpr float NORM_VALUES[3] = {1.0 / 127.5f, 1.0 / 127.5f, 1.0 / 127.5f};
+    
     static constexpr int DST_HEIGHT = 32;
-
-    static constexpr int SEQ_LEN = 64;
-    static constexpr int NUM_CLASSES = 5531;
 
     std::vector<std::string> keys;
     void set_input_shape(int dst_width);

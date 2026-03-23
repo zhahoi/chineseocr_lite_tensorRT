@@ -130,14 +130,16 @@ trtexec \
     --memPoolSize=workspace:4096 \
     --minShapes=input0:1x3x32x32 \
     --optShapes=input0:1x3x736x736 \
-    --maxShapes=input0:1x3x1024x1024
+    --maxShapes=input0:1x3x1024x1024 \
+    --verbose
 
 # AngleNet（静态输入，直接转换）
 trtexec \
     --onnx=angle_net.onnx \
     --saveEngine=angle_net.engine \
     --fp16 \
-    --memPoolSize=workspace:4096
+    --memPoolSize=workspace:4096 \
+    --verbose
 
 # CrnnNet（动态宽度）
 trtexec \
@@ -147,7 +149,8 @@ trtexec \
     --memPoolSize=workspace:4096 \
     --minShapes=input:1x3x32x1 \
     --optShapes=input:1x3x32x480 \
-    --maxShapes=input:1x3x32x2000
+    --maxShapes=input:1x3x32x2000 \
+    --verbose 2>&1 | grep -E "output|Output|out|shape|Shape" | head -30
 ```
 
 ---
